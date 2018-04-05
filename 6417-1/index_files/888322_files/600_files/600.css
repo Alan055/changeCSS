@@ -1,0 +1,48 @@
+a {
+	font: 12px/normal 宋体; color: rgb(0, 0, 0); text-decoration: none; font-size-adjust: none; font-stretch: normal;
+}
+a:hover {
+	color: rgb(255, 0, 0); font-weight: bold; text-decoration: blink;
+}
+body {
+	color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px;
+}
+td {
+	line-height: 15px; font-family: 宋体; font-size: 12px;
+}
+td.forumHeaderBackgroundAlternate {
+	color: rgb(255, 255, 255); background-color: rgb(121, 154, 225);
+}
+#TableTitleLink a:link {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#TableTitleLink a:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#TableTitleLink a:active {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#TableTitleLink a:hover {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+td.forumRow {
+	background-color: rgb(222, 229, 250);
+}
+td.forumRowHighlight {
+	background-color: rgb(212, 222, 249);
+}
+.tableBorder {
+	border: 1px solid rgb(101, 149, 214); background-color: rgb(255, 255, 255);
+}
+th {
+	color: white; font-size: 12px; font-weight: bold; background-image: url("images/admin_bg_1.gif"); background-color: rgb(68, 85, 170);
+}
+input {
+	line-height: 15px; font-family: Tahoma,Verdana,宋体; font-size: 12px;
+}
+select {
+	line-height: 15px; font-family: Tahoma,Verdana,宋体; font-size: 12px;
+}
+textarea {
+	line-height: 15px; font-family: Tahoma,Verdana,宋体; font-size: 12px;
+}

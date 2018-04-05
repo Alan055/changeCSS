@@ -1,0 +1,108 @@
+style typetextcss a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:link {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:visited {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:active {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a.h1 {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.h1:link {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.h1:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.h1:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a.h1:active {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a.h2 {
+	color: rgb(255, 0, 0); text-decoration: none;
+}
+a.h2:link {
+	color: rgb(255, 0, 0); text-decoration: none;
+}
+a.h2:visited {
+	color: rgb(255, 0, 0); text-decoration: none;
+}
+a.h2:hover {
+	color: rgb(204, 0, 0); text-decoration: underline;
+}
+a.h2:active {
+	color: rgb(204, 0, 0); text-decoration: underline;
+}
+a.h3 {
+	color: rgb(182, 207, 248); text-decoration: none;
+}
+a.h3:link {
+	color: rgb(182, 207, 248); text-decoration: none;
+}
+a.h3:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a.h3:hover {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+a.h3:active {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+.t1 {
+	font-size: 12px;
+}
+.t2 {
+	font-size: 12px;
+}
+.c1 {
+	font-size: 12px;
+}
+.c2 {
+	font-size: 14px;
+}
+.l1 {
+	line-height: 120%;
+}
+.l2 {
+	line-height: 150%;
+}
+td {
+	font-family: "ËÎÌו"; font-size: 12px;
+}
+br {
+	font-size: 5px;
+}
+form {
+	font-size: 12px;
+}
+.inputbox {
+	border: 1px groove rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+.line {
+	border-width: 0px 0px 1px; border-style: groove; border-color: rgb(0, 0, 0); color: rgb(0, 0, 255);
+}
+.drop_w {
+	
+}
+.drop_b {
+	
+}
+.grow_w {
+	
+}
+.grow_b {
+	
+}
+body {
+	-ms-scrollbar-base-color: rgb(243, 243, 243); -ms-scrollbar-track-color: rgb(243, 243, 243);
+}
