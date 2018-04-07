@@ -1,0 +1,84 @@
+/*这个是重置，统一各个浏览器的样式，兼容性等等*/
+/*请不要更改这个css！ 谢谢了*/
+
+@charset "utf-8";
+html, body {
+  font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+html{
+  background: #F4F4F4;
+  background-attachment: fixed;
+}
+/*div, span, iframe, map, font, input, img, a img, samp, hr, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, code, dl, dt, dd, ol, ul, li, form, label, table, tr, td, th {
+
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FF0000;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a.hidefocus {
+  outline: none
+}
+input[type=text], input[type=button], input[type=submit] {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+input{outline:none}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+table{
+  table-layout: fixed;
+  width: 100%;
+}

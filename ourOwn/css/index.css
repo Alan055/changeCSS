@@ -1,0 +1,40 @@
+html {
+  font-size: 12px;
+}
+#app {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#app header {
+  width: 100%;
+}
+#app header img {
+  width: 100%;
+}
+#app header .coder {
+  width: 100%;
+  position: relative;
+  height: 34px;
+  overflow: hidden;
+}
+#app header .coder iframe {
+  width: 100%;
+}
+#app header .coder .whiteBoard {
+  position: absolute;
+  top: 0px;
+  left: 630px;
+  z-index: 50;
+  background: #fff;
+  width: 100px;
+  height: 50px;
+}
+@media (min-width: 700px) {
+  .whiteBoard {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

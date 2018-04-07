@@ -1,0 +1,78 @@
+//这里写的是less的配置项
+
+//这里是固定页头的配置项
+@pageWidth: 700px; //页面展示的最大宽度
+@coderHeight: 34px; //报码器的高度
+@whiteBoardLeft: 630px; //报码器右边遮住的白板，
+//这里是固定页头的配置项  --end
+
+//头到6*16表格
+//Alan
+
+//头到6*16表格--end
+
+//头到6*16表格下面到结束
+//json
+
+//头到6*16表格下面到结束--end
+
+//这里写的是less的配置项  --end
+html {
+  font-size: 12px;
+}
+
+#app {
+  width: 100%;
+  max-width: @pageWidth;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  //这里是页头固定的样式
+  header {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .coder {
+      width: 100%;
+      position: relative;
+      height: @coderHeight;
+      overflow: hidden;
+      iframe {
+        width: 100%;
+      }
+      .whiteBoard {
+        position: absolute;
+        top: 0px;
+        left: @whiteBoardLeft;
+        z-index: 50;
+        background: #fff;
+        width: 100px;
+        height: 50px;
+      }
+    }
+  }
+  //这里是页头固定的样式 --end
+
+  //这里是内容区
+  .content {
+    //Alan
+
+
+    //Alan   -end
+
+    //json
+
+    //json  --end
+
+  }
+  //这里是内容区--end
+
+}
+
+//这个媒体查询--非手机情况下
+@media (min-width: 700px) {
+  .whiteBoard {
+    display: none;
+  }
+}
