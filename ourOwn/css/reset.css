@@ -4,6 +4,8 @@
 @charset "utf-8";
 html, body {
   font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: center;
 }
 html{
   background: #F4F4F4;

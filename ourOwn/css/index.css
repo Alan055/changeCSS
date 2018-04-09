@@ -1,6 +1,14 @@
+.text-t,
+#app .content .text-title {
+  background: linear-gradient(transparent, #794868);
+  font-size: 26px;
+  color: yellow;
+  text-shadow: 0px 0px 10px red;
+}
 html {
   font-size: 12px;
-  color: #000;
+  color: #333;
+  font-weight: bold;
 }
 #app {
   width: 100%;
@@ -33,6 +41,7 @@ html {
   top: 0px;
   left: 630px;
   z-index: 50;
+  background: #fff;
   width: 100px;
   height: 50px;
 }
@@ -106,6 +115,43 @@ html {
 }
 #app .content .table .tableContent > div .greenFont {
   color: #008000;
+}
+#app .content .t-yellow {
+  background: yellow;
+}
+#app .content .t-red {
+  color: red;
+}
+#app .content .t-blue {
+  color: blue;
+}
+#app .content section {
+  background: #713800;
+  margin-top: 5px;
+  padding: 4px;
+  border-radius: 5px ;
+}
+#app .content .back-white {
+  background: #fff;
+}
+#app .content .cont-ul li {
+  height: 34px;
+  line-height: 34px;
+  font-size: 24px;
+  border-bottom: 2px solid #713800;
+}
+#app .content .cont-tab {
+  font-size: 18px;
+}
+#app .content .cont-tab td {
+  border: 1px solid #000;
+  height: 30px;
+}
+#app .content .cont-tab td:nth-child(1) {
+  width: 39px;
+}
+#app .content .cont-tab td:nth-child(3) {
+  width: 45px;
 }
 @media (min-width: 700px) {
   .whiteBoard {
