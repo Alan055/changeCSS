@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="applicable-device" content="mobile">
@@ -32,9 +32,21 @@
   </header>
   <div class="content">
     <!--for Alan-->
+    <div class="advertisementImg">
+      <img src="picture/000.gif" alt="">
+    </div>
+    <div class="box advertisement">
+      <div class="advertisementLabel" v-text="advertisementLabel"></div>
+      <div class="advertisementContent" >
+        <marquee scrollamount="2" scrolldelay="50" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: bold;">
+          <span style="color:#00FFFF">{{advertisementContent1}}</span>{{advertisementContent2}}
+        </marquee>
+      </div>
+    </div>
+    div.title
 
 
-    <!--6*16表格下面-->
+    <!--6*16琛ㄦ牸涓嬮潰-->
     <!--for json-->
 
 
