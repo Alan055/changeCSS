@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport"
@@ -43,7 +43,29 @@
         </marquee>
       </div>
     </div>
-    div.title
+    <div class="box title_text">
+      <div v-for="(v,i) in title_text" :key="i" v-text="v.name" :style="`color:${v.color}`"></div>
+    </div>
+    <!--掐指一算-->
+    <div class="box table">
+      <div class="tableTop" v-text="table1.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table1.content" :key="i" v-html="v"></div>
+      </div>
+    </div>
+    <!--平特一肖●超乎想象-->
+    <div class="box table">
+      <div class="tableTop" v-text="table2.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table2.content" :key="i" v-html="v"></div>
+      </div>
+    </div>
+    <div class="box table">
+      <div class="tableTop" v-text="table3.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table3.content" :key="i" v-html="v"></div>
+      </div>
+    </div>
 
 
     <!--6*16表格下面-->

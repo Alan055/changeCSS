@@ -1,6 +1,6 @@
 html {
   font-size: 12px;
-  color: #333;
+  color: #000;
 }
 #app {
   width: 100%;
@@ -11,6 +11,10 @@ html {
 }
 #app header {
   width: 100%;
+  max-width: 700px;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
 }
 #app header img {
   width: 100%;
@@ -29,9 +33,11 @@ html {
   top: 0px;
   left: 630px;
   z-index: 50;
-  background: #fff;
   width: 100px;
   height: 50px;
+}
+#app .content {
+  margin-top: 115px;
 }
 #app .content .advertisementImg img {
   width: 100%;
@@ -40,12 +46,13 @@ html {
   overflow: hidden;
   border-radius: 5px;
   padding: 0 5px;
+  background: #713800;
+  margin-top: 5px;
 }
 #app .content .advertisement {
   height: 35px;
   line-height: 100%;
   color: #fff;
-  background: #713800;
 }
 #app .content .advertisement > div {
   display: inline-block;
@@ -62,6 +69,43 @@ html {
   width: calc(100% - 115px);
   line-height: 35px;
   height: 35px;
+}
+#app .content .title_text {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+#app .content .table {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px ;
+}
+#app .content .table .tableTop {
+  color: yellow;
+  font-size: 26px;
+  background: linear-gradient(transparent, #794868);
+  text-shadow: 0px 0px 10px red;
+}
+#app .content .table .tableContent {
+  background: #fff;
+  font-size: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#app .content .table .tableContent > div {
+  border: 1px solid #000;
+}
+#app .content .table .tableContent > div .yellow {
+  background: #FFFF00;
+}
+#app .content .table .tableContent > div .gray {
+  background: #C0C0C0;
+}
+#app .content .table .tableContent > div .blueFont {
+  color: #00f;
+}
+#app .content .table .tableContent > div .greenFont {
+  color: #008000;
 }
 @media (min-width: 700px) {
   .whiteBoard {

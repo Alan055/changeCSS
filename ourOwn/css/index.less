@@ -4,6 +4,7 @@
 @pageWidth: 700px; //页面展示的最大宽度
 @coderHeight: 34px; //报码器的高度
 @whiteBoardLeft: 630px; //报码器右边遮住的白板，
+@headerHeight:115px;//固定头部的高度
 //这里是固定页头的配置项  --end
 
 //头到6*16表格
@@ -11,6 +12,11 @@
 @boxBackground:#713800;//所有盒子的背景颜色
 @advertisement:35px;//广告条的高度
 @advertisementLabelWidth:115px;//广告条标题的宽度
+
+@title_text_font:26px;//标题文字的大小
+
+@tableTop_font:26px;//表格中标题的字体
+@tablecontent_font:25px;//表格中内容的字体
 //头到6*16表格--end
 
 //头到6*16表格下面到结束
@@ -21,7 +27,7 @@
 //这里写的是less的配置项  --end
 html {
   font-size: 12px;
-  color: #333;
+  color: #000;
 }
 
 #app {
@@ -33,6 +39,10 @@ html {
   //这里是页头固定的样式
   header {
     width: 100%;
+    max-width: @pageWidth;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
     img {
       width: 100%;
     }
@@ -49,7 +59,7 @@ html {
         top: 0px;
         left: @whiteBoardLeft;
         z-index: 50;
-        background: #fff;
+
         width: 100px;
         height: 50px;
       }
@@ -60,6 +70,7 @@ html {
   //这里是内容区
   .content {
     //Alan
+    margin-top: @headerHeight;
     .advertisementImg{
       img{
         width: 100%;
@@ -69,12 +80,14 @@ html {
       overflow: hidden;
       border-radius: 5px;
       padding: 0 5px;
+      background: #713800;
+      margin-top: 5px;
     }
+    //新闻的样式
     .advertisement{
       height: @advertisement;
       line-height: 100%;
       color: #fff;
-      background: @boxBackground;
       >div{
         display: inline-block;
         float: left;
@@ -92,6 +105,48 @@ html {
         height: @advertisement;
       }
     }
+    //介绍
+    .title_text{
+      font-size: @title_text_font;
+      font-weight: bold;
+      text-align: center;
+    }
+    //第一个表格  --11497铁算盘掐指一算四肖中特码
+    .table{
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 5px ;
+      .tableTop{
+        color: yellow;
+        font-size: @tableTop_font ;
+        background: linear-gradient(transparent,#794868);
+        text-shadow: 0px 0px 10px red;
+      }
+      .tableContent{
+        background: #fff;
+        font-size: @tablecontent_font;
+        border-radius: 6px;
+        overflow: hidden;
+        >div{
+          border: 1px solid #000;
+          .yellow{
+            background: #FFFF00;
+          }
+          .gray{
+            background: #C0C0C0;
+          }
+          .blueFont{
+            color: #00f;
+          }
+          .greenFont{
+            color: #008000;
+          }
+        }
+
+      }
+    }
+
+
 
     //Alan   -end
 
