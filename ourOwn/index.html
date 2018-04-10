@@ -55,13 +55,102 @@
         <div v-for="(v,i) in table2.content" :key="i" v-html="v"></div>
       </div>
     </div>
+    <!--５点来料」-->
     <div class="box table">
       <div class="tableTop" v-text="table3.label"></div>
       <div class="tableContent">
         <div v-for="(v,i) in table3.content" :key="i" v-html="v"></div>
       </div>
     </div>
+    <!--「必中波色」-->
+    <div class="box table">
+      <div class="tableTop" v-text="table4.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table4.content" :key="i" v-html="v"></div>
+      </div>
+    </div>
+    <!--报码器和开奖时间---这个不做了-->
+    <!--<div class="box">-->
+      <!---->
+    <!--</div>-->
+    <!--「平特一尾」-->
+    <div class="box table">
+      <div class="tableTop" v-text="table5.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table5.content" :key="i" v-html="v"></div>
+      </div>
+    </div>
+    <!--最准确的资料-->
+    <div class="box table">
+      <div class="tableTop" v-text="table6.label"></div>
+      <div class="tableContent tableContentTable" v-for="(v,i) in table6.content" :key="i">
+        <div class="tableContent_label" v-text="v.label"></div>
+        <div class="tableContent_table">
+          <div v-for="(m,n) in v.content" :key="n" v-html="m"></div>
+        </div>
+        <div class="tableFoot" v-html="v.foot"></div>
+      </div>
+    </div>
+    <!--每期推荐-->
+    <div class="box table">
+      <div class="tableTop" v-text="table7.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table7.content" :key="i" >
+          <a class="jumpFont" href="" v-html="v"></a>
+        </div>
+      </div>
+    </div>
+    <!--永久域名-->
+    <div class="box table">
+      <div class="tableTop" v-text="table8.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table8.content" :key="i" class="tableForever">
+          <div v-for="(m,n) in v.table" :key="n" class="forever">
+            <div class="left" v-text="m[0]"></div>
+            <div class="center" ><span class="redFont" v-html="m[1]"></span></div>
+            <div class="right" v-text="v.right"></div>
+          </div>
+          <div class="foot" v-text="table8.foot"></div>
+        </div>
+      </div>
+    </div>
+    <!--「５码复式●独家提供」-->
+    <div class="box table">
+      <div class="tableTop" v-text="table9.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table9.content" :key="i" v-html="v"></div>
+      </div>
+    </div>
+    <!--「杀期码专区」-->
+    <div class="box table">
+      <div class="tableTop" v-text="table10.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table10.content" :key="i" >
+          <a class="jumpFont" href="" v-html="v"></a>
+        </div>
+      </div>
+    </div>
+    <!--㊣三期内必出生肖-->
+    <div class="box table">
+      <div class="tableTop" v-text="table11.label"></div>
+      <div class="tableContent">
+        <div v-for="(v,i) in table11.content" :key="i" v-html="v"></div>
+      </div>
+    </div>
+    <!--「绝杀专区」-->
+    <div class="box table">
+      <div class="tableTop" v-text="table12.label"></div>
+      <div class="tableContent">
+        <div class="content_top" >
+          <div v-for="(v,i) in table12.content.tableTop" :key="i" v-text="v"></div>
+        </div>
+        <div class="content_content" v-for="(v,i) in table12.content.tableContent" :key="i">
+          <div v-text="'0'+(i+17)+'期'"></div>
+          <div v-for="(m,n) in v" :key="n" v-html="m"></div>
+        </div>
 
+      </div>
+    </div>
 
     <!--6*16表格下面-->
     <!--for json-->

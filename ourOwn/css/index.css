@@ -23,6 +23,7 @@ html {
   position: fixed;
   z-index: 999;
   background: #fff;
+  top: 0;
 }
 #app header img {
   width: 100%;
@@ -87,13 +88,34 @@ html {
 #app .content .table {
   font-weight: bold;
   text-align: center;
-  padding-bottom: 5px ;
+  padding-bottom: 5px;
+}
+#app .content .table .yellow {
+  background: #FFFF00;
+}
+#app .content .table .gray {
+  background: #C0C0C0;
+}
+#app .content .table .grayFont {
+  color: #C0C0C0;
+}
+#app .content .table .blueFont {
+  color: #00f;
+}
+#app .content .table .greenFont {
+  color: #008000;
+}
+#app .content .table .redFont {
+  color: #f00;
 }
 #app .content .table .tableTop {
   color: yellow;
   font-size: 26px;
   background: linear-gradient(transparent, #794868);
   text-shadow: 0px 0px 10px red;
+}
+#app .content .table .brownFont {
+  color: #808000;
 }
 #app .content .table .tableContent {
   background: #fff;
@@ -104,17 +126,107 @@ html {
 #app .content .table .tableContent > div {
   border: 1px solid #000;
 }
-#app .content .table .tableContent > div .yellow {
-  background: #FFFF00;
+#app .content .table .tableContent .jumpFont {
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
 }
-#app .content .table .tableContent > div .gray {
-  background: #C0C0C0;
+#app .content .table .tableContent .tableForever {
+  background: #fcf;
+  font-size: 20px;
+  border-bottom: none;
 }
-#app .content .table .tableContent > div .blueFont {
-  color: #00f;
+#app .content .table .tableContent .tableForever .forever {
+  overflow: hidden;
+  border-bottom: 1px solid #000;
 }
-#app .content .table .tableContent > div .greenFont {
-  color: #008000;
+#app .content .table .tableContent .tableForever .forever > div {
+  display: inline-block;
+  float: left;
+}
+#app .content .table .tableContent .tableForever .forever .left,
+#app .content .table .tableContent .tableForever .forever .right {
+  width: 140px;
+}
+#app .content .table .tableContent .tableForever .forever .center {
+  background: #ff9;
+  width: calc(100% - 140px * 2);
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+#app .content .table .tableContent .tableForever:last-child {
+  border-bottom: 1px solid #000;
+}
+#app .content .table .tableContent .content_top {
+  background: #fc6;
+  overflow: hidden;
+}
+#app .content .table .tableContent .content_top > div {
+  display: inline-block;
+  float: left;
+  border-right: 1px solid #000;
+}
+#app .content .table .tableContent .content_top :not(:last-child) {
+  width: 112px;
+}
+#app .content .table .tableContent .content_top :last-child {
+  width: calc(100% - 112px*5);
+  border-right: none;
+}
+#app .content .table .tableContent .content_content {
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+  border-top: none;
+}
+#app .content .table .tableContent .content_content > div {
+  display: inline-block;
+  float: left;
+  border-right: 1px solid #000;
+}
+#app .content .table .tableContent .content_content :not(:last-child) {
+  width: 112px;
+}
+#app .content .table .tableContent .content_content :last-child {
+  width: calc(100% - 112px*5);
+  border-right: none;
+}
+#app .content .table .tableContentTable {
+  border-radius: 0px;
+  border: 1px solid #000;
+  border-bottom: none;
+}
+#app .content .table .tableContentTable .tableContent_label {
+  background: #FF9933;
+  border-bottom: none;
+}
+#app .content .table .tableContentTable .tableFoot {
+  border-bottom: none;
+  border-top: none;
+}
+#app .content .table .tableContentTable .tableContent_table {
+  background: #fff;
+  font-size: 25px;
+  border: 1px solid #000;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+}
+#app .content .table .tableContentTable .tableContent_table > div {
+  float: left;
+  display: inline-block;
+  border: 1px solid #000;
+}
+#app .content .table .tableContentTable .tableContent_table > div:nth-child(odd) {
+  width: 252px;
+  border-left: none;
+}
+#app .content .table .tableContentTable .tableContent_table > div:nth-child(even) {
+  width: calc(100% - 252px);
+  border-right: none;
+}
+#app .content .table .tableContentTable:last-child {
+  border-top: none;
+  border-bottom: 2px solid #000;
 }
 #app .content .t-yellow {
   background: yellow;
@@ -129,7 +241,7 @@ html {
   background: #713800;
   margin-top: 5px;
   padding: 4px;
-  border-radius: 5px ;
+  border-radius: 5px;
 }
 #app .content .back-white {
   background: #fff;
