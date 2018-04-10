@@ -116,6 +116,9 @@ html {
 #app .content .table .tableContent > div .greenFont {
   color: #008000;
 }
+#app .content .t-rb {
+  color: #000080;
+}
 #app .content .t-yellow {
   background: yellow;
 }
@@ -143,15 +146,52 @@ html {
 #app .content .cont-tab {
   font-size: 18px;
 }
-#app .content .cont-tab td {
+#app .content .cont-tab tr td {
   border: 1px solid #000;
   height: 30px;
 }
-#app .content .cont-tab td:nth-child(1) {
+#app .content .cont-tab tr td:nth-child(1) {
   width: 39px;
 }
-#app .content .cont-tab td:nth-child(3) {
+#app .content .cont-tab tr td:nth-child(3) {
   width: 45px;
+}
+#app .content .cont-tab2 {
+  font-size: 12px;
+  text-align: left;
+}
+#app .content .cont-tab2 td {
+  border: 1px solid #000;
+}
+#app .content .cont-tab2 tr:nth-child(odd) td:nth-child(1) {
+  width: 33px;
+  font-size: 16px;
+  text-align: center;
+}
+#app .content .cont-tab3 {
+  background: #f5f5f5;
+}
+#app .content .cont-tab3 td {
+  width: 33.3%;
+  border: 2px solid #fff;
+  font-size: 16px;
+}
+#app .content .cont-tab3 td a {
+  color: #000;
+}
+#app .content .wrapper3-title {
+  color: #fff;
+  border-bottom: 1px solid #000;
+}
+#app .content .wrapper3-cont {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  color: #fff;
+  line-height: 20px;
+  padding: 10px 0;
+  font-size: 14px;
 }
 @media (min-width: 700px) {
   .whiteBoard {
