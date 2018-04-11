@@ -1,331 +1,712 @@
-//这里写的是less的配置项
-
-//这里是固定页头的配置项
-@pageWidth: 700px; //页面展示的最大宽度
-@coderHeight: 34px; //报码器的高度
-@whiteBoardLeft: 630px; //报码器右边遮住的白板，
-@headerHeight: 115px; //固定头部的高度
-//这里是固定页头的配置项  --end
-
-//头到6*16表格
-//Alan
-@boxBackground: #713800; //所有盒子的背景颜色
-@advertisement: 35px; //广告条的高度
-@advertisementLabelWidth: 115px; //广告条标题的宽度
-
-@title_text_font: 26px; //标题文字的大小
-
-@tableTop_font: 26px; //表格中标题的字体
-@tablecontent_font: 25px; //表格中内容的字体
-@tablecontent_table1Width: round(@pageWidth*0.36); //表格中表格的第一行的宽度
-@tableForeverLeftRightWidth: round(@pageWidth*0.2); //表格"永远"的左右框的宽度
-@table6_16width: round(@pageWidth*0.16); //6*16表格的每个单元的宽度
-
-@media (max-width: 568px) {
+@media (min-width: 769px) {
 
   //for Alan
-
-
+  @import 'pc.less';
 
   //for json
 
+  //头到6*16表格下面到结束
+  //json
+  .text-t {
+    background: linear-gradient(transparent, #794868);
+    font-size: 26px;
+    color: yellow;
+    text-shadow: 0px 0px 10px red;
+  }
 
+  //头到6*16表格下面到结束--end
 
+  //这里写的是less的配置项  --end
+  html {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+  }
 
-
-}
-
-//头到6*16表格--end
-
-//头到6*16表格下面到结束
-//json
-.text-t {
-  background: linear-gradient(transparent, #794868);
-  font-size: 26px;
-  color: yellow;
-  text-shadow: 0px 0px 10px red;
-}
-
-//头到6*16表格下面到结束--end
-
-//这里写的是less的配置项  --end
-html {
-  font-size: 12px;
-  color: #333;
-  font-weight: bold;
-}
-
-#app {
-  width: 100%;
-  max-width: @pageWidth;
-  background: #fff;
-  margin: 0 auto;
-  overflow: hidden;
-  //这里是页头固定的样式
-  header {
+  #app {
     width: 100%;
     max-width: @pageWidth;
-    position: fixed;
-    z-index: 999;
     background: #fff;
-    top: 0;
-    img {
+    margin: 0 auto;
+    overflow: hidden;
+    //这里是页头固定的样式
+    header {
       width: 100%;
-    }
-    .coder {
-      width: 100%;
-      position: relative;
-      height: @coderHeight;
-      overflow: hidden;
-      iframe {
-        width: 100%;
-      }
-      .whiteBoard {
-        position: absolute;
-        top: 0px;
-        left: @whiteBoardLeft;
-        z-index: 50;
-        background: #fff;
-        width: 100px;
-        height: 50px;
-      }
-    }
-  }
-  //这里是页头固定的样式 --end
-
-  //这里是内容区
-  .content {
-    //Alan
-    margin-top: @headerHeight;
-    .advertisementImg {
+      max-width: @pageWidth;
+      position: fixed;
+      z-index: 999;
+      background: #fff;
+      top: 0;
       img {
         width: 100%;
       }
-    }
-    > .box {
-      overflow: hidden;
-      border-radius: 5px;
-      padding: 0 5px;
-      background: #713800;
-      margin-top: 5px;
-    }
-    //新闻的样式
-    .advertisement {
-      height: @advertisement;
-      line-height: 100%;
-      color: #fff;
-      > div {
-        display: inline-block;
-        float: left;
-        height: @advertisement;
-      }
-      .advertisementLabel {
-        width: @advertisementLabelWidth;
-        line-height: @advertisement;
-        height: @advertisement;
-        text-align: right;
-      }
-      .advertisementContent {
-        width: calc(100% - @advertisementLabelWidth);
-        line-height: @advertisement;
-        height: @advertisement;
-      }
-    }
-    //介绍
-    .title_text {
-      font-size: @title_text_font;
-      font-weight: bold;
-      text-align: center;
-    }
-    //第一个表格  --11497铁算盘掐指一算四肖中特码
-    .table {
-      font-weight: bold;
-      text-align: center;
-      padding-bottom: 5px;
-      //表格中的字体样式都写在这儿了
-      .yellow {
-        background: #FFFF00;
-      }
-      .gray {
-        background: #C0C0C0;
-      }
-      .grayFont{
-        color: #C0C0C0;
-
-      }
-      .blueFont {
-        color: #00f;
-      }
-      .greenFont {
-        color: #008000;
-      }
-      .redFont {
-        color: #f00;
-      }
-      .tableTop {
-        color: yellow;
-        font-size: @tableTop_font;
-        background: linear-gradient(transparent, #794868);
-        text-shadow: 0px 0px 10px red;
-      }
-      .brownFont {
-        color: #808000;
-      }
-      .tableContent {
-        background: #fff;
-        font-size: @tablecontent_font;
-        border-radius: 6px;
+      .coder {
+        width: 100%;
+        position: relative;
+        height: @coderHeight;
         overflow: hidden;
-        > div {
-          border: 1px solid #000;
+        iframe {
+          width: 100%;
         }
-        .jumpFont {
-          color: #000;
-          font-size: 20px;
-          font-weight: normal;
-          :hover {
-            //border-bottom: 0.5px solid #000;
-            //padding-bottom: -4px  ;
-          }
+        .whiteBoard {
+          position: absolute;
+          top: 0px;
+          left: @whiteBoardLeft;
+          z-index: 50;
+          background: #fff;
+          width: 100px;
+          height: 50px;
         }
-        .tableForever {
-          background: #fcf;
-          font-size: 20px;
-          border-bottom: none;
-          .forever {
-            overflow: hidden;
-            border-bottom: 1px solid #000;
+      }
+    }
+    //这里是页头固定的样式 --end
 
+    //这里是内容区
+    .content {
+      //Alan
+      margin-top: @headerHeight;
+      .advertisementImg {
+        img {
+          width: 100%;
+        }
+      }
+      > .box {
+        overflow: hidden;
+        border-radius: 5px;
+        padding: 0 5px;
+        background: #713800;
+        margin-top: 5px;
+      }
+      //新闻的样式
+      .advertisement {
+        height: @advertisement;
+        line-height: 100%;
+        color: #fff;
+        > div {
+          display: inline-block;
+          float: left;
+          height: @advertisement;
+        }
+        .advertisementLabel {
+          width: @advertisementLabelWidth;
+          line-height: @advertisement;
+          height: @advertisement;
+          text-align: right;
+        }
+        .advertisementContent {
+          width: calc(100% - @advertisementLabelWidth);
+          line-height: @advertisement;
+          height: @advertisement;
+        }
+      }
+      //介绍
+      .title_text {
+        font-size: @title_text_font;
+        font-weight: bold;
+        text-align: center;
+      }
+      //第一个表格  --11497铁算盘掐指一算四肖中特码
+      .table {
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 5px;
+        //表格中的字体样式都写在这儿了
+        .yellow {
+          background: #FFFF00;
+        }
+        .gray {
+          background: #C0C0C0;
+        }
+        .grayFont {
+          color: #C0C0C0;
+
+        }
+        .blueFont {
+          color: #00f;
+        }
+        .greenFont {
+          color: #008000;
+        }
+        .redFont {
+          color: #f00;
+        }
+        .tableTop {
+          color: yellow;
+          font-size: @tableTop_font;
+          background: linear-gradient(transparent, #794868);
+          text-shadow: 0px 0px 10px red;
+        }
+        .brownFont {
+          color: #808000;
+        }
+        .tableContent {
+          background: #fff;
+          font-size: @tablecontent_font;
+          border-radius: 6px;
+          overflow: hidden;
+          > div {
+            border: 1px solid #000;
+          }
+          .jumpFont {
+            color: #000;
+            font-size: 20px;
+            font-weight: normal;
+            :hover {
+              //border-bottom: 0.5px solid #000;
+              //padding-bottom: -4px  ;
+            }
+          }
+          .tableForever {
+            background: #fcf;
+            font-size: @tableForever_font;
+            border-bottom: none;
+            .forever {
+              overflow: hidden;
+              border-bottom: 1px solid #000;
+
+              > div {
+                display: inline-block;
+                float: left;
+              }
+              .left, .right {
+                width: @tableForeverLeftRightWidth;
+              }
+              .center {
+                background: #ff9;
+                width: calc(100% - @tableForeverLeftRightWidth * 2);
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+              }
+            }
+
+          }
+          .tableForever:last-child {
+            border-bottom: 1px solid #000;
+          }
+          .content_top {
+            background: #fc6;
+            overflow: hidden;
             > div {
               display: inline-block;
               float: left;
+              border-right: 1px solid #000;
+
             }
-            .left, .right {
-              width: @tableForeverLeftRightWidth;
+            :not(:last-child) {
+              width: @table6_16width;
             }
-            .center {
-              background: #ff9;
-              width: calc(100% - @tableForeverLeftRightWidth * 2);
-              border-left: 1px solid #000;
+            :last-child {
+              width: calc(100% - @table6_16width * 5);
+              border-right: none;
+            }
+          }
+          .content_content {
+            border-bottom: 1px solid #000;
+            overflow: hidden;
+            border-top: none;
+            > div {
+              display: inline-block;
+              float: left;
               border-right: 1px solid #000;
             }
-          }
-
-        }
-        .tableForever:last-child {
-          border-bottom: 1px solid #000;
-        }
-        .content_top {
-          background: #fc6;
-          overflow: hidden;
-          > div {
-            display: inline-block;
-            float: left;
-            border-right: 1px solid #000;
-
-          }
-          :not(:last-child) {
-            width: @table6_16width;
-          }
-          :last-child {
-            width: calc(100% - @table6_16width*5);
-            border-right: none;
+            :not(:last-child) {
+              width: @table6_16width;
+            }
+            :last-child {
+              width: calc(100% - @table6_16width * 5);
+              border-right: none;
+            }
           }
         }
-        .content_content {
-          border-bottom: 1px solid #000;
-          overflow: hidden;
-          border-top: none;
-          > div {
-             display: inline-block;
-             float: left;
-            border-right: 1px solid #000;
-           }
-          :not(:last-child) {
-            width: @table6_16width;
-          }
-          :last-child {
-            width: calc(100% - @table6_16width*5);
-            border-right: none;
-          }
-        }
-      }
-      .tableContentTable {
-        border-radius: 0px;
-        border: 1px solid #000;
-        border-bottom: none;
-        .tableContent_label {
-          background: #FF9933;
-          border-bottom: none;
-        }
-        .tableFoot {
-          border-bottom: none;
-          border-top: none;
-        }
-        .tableContent_table {
-          background: #fff;
-          font-size: 25px;
+        .tableContentTable {
+          border-radius: 0px;
           border: 1px solid #000;
-          overflow: hidden;
-          text-align: left;
-          width: 100%;
-          > div {
-            float: left;
-            display: inline-block;
+          border-bottom: none;
+          .tableContent_label {
+            background: #FF9933;
+            border-bottom: none;
+          }
+          .tableFoot {
+            border-bottom: none;
+            border-top: none;
+          }
+          .tableContent_table {
+            background: #fff;
+            font-size: 25px;
             border: 1px solid #000;
+            overflow: hidden;
+            text-align: left;
+            width: 100%;
+            > div {
+              float: left;
+              display: inline-block;
+              border: 1px solid #000;
+            }
+            > div:nth-child(odd) {
+              width: @tablecontent_table1Width;
+              border-left: none;
+            }
+            > div:nth-child(even) {
+              width: calc(100% - @tablecontent_table1Width);
+              border-right: none;
+            }
           }
-          > div:nth-child(odd) {
-            width: @tablecontent_table1Width;
-            border-left: none;
-          }
-          > div:nth-child(even) {
-            width: calc(100% - @tablecontent_table1Width);
-            border-right: none;
-          }
+          //.tableContent_table
         }
-        //.tableContent_table
+        .tableContentTable:last-child {
+          border-top: none;
+          border-bottom: 2px solid #000;
+        }
       }
-      .tableContentTable:last-child {
-        border-top: none;
-        border-bottom: 2px solid #000;
+
+      //Alan   -end
+
+      //json
+      .t-rb {
+        color: #000080;
       }
+      .t-yellow {
+        background: yellow;
+      }
+      .t-red {
+        color: red;
+      }
+      .t-blue {
+        color: blue;
+      }
+      section {
+        background: #713800;
+        margin-top: 5px;
+        padding: 4px;
+        border-radius: 5px;
+      }
+      .text-title {
+        &:extend(.text-t);
+      }
+      .back-white {
+        background: #fff;
+      }
+      .cont-ul li {
+        height: 34px;
+        line-height: 34px;
+        font-size: 24px;
+        border-bottom: 2px solid #713800;
+      }
+      .cont-tab {
+        font-size: 18px;
+      }
+      .cont-tab tr td {
+        border: 1px solid #000;
+        height: 30px;
+      }
+      .cont-tab tr td:nth-child(1) {
+        width: 39px;
+      }
+      .cont-tab tr td:nth-child(3) {
+        width: 45px;
+      }
+
+      .cont-tab2 {
+        font-size: 12px;
+        text-align: left;
+      }
+      .cont-tab2 td {
+        border: 1px solid #000
+      }
+      .cont-tab2 tr:nth-child(odd) td:nth-child(1) {
+        width: 33px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .cont-tab3 {
+        background: #f5f5f5;
+      }
+      .cont-tab3 td {
+        width: 33.3%;
+        border: 2px solid #fff;
+        font-size: 16px;
+      }
+      .cont-tab3 td a {
+        color: #000;
+      }
+
+      .wrapper3-title {
+        color: #fff;
+        border-bottom: 1px solid #000;
+      }
+      .wrapper3-cont {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid #000;
+        color: #fff;
+        line-height: 20px;
+        padding: 10px 0;
+        font-size: 14px;
+      }
+      //json  --end
+
     }
-
-    //Alan   -end
-
-
-    //json
-    .t-rb{color:#000080;}
-    .t-yellow{background: yellow;}
-    .t-red{color: red;}
-    .t-blue{color: blue;}
-    section{background:#713800;margin-top: 5px; padding: 4px; border-radius: 5px ;}
-    .text-title{
-      &:extend(.text-t);
-    }
-    .back-white{background: #fff;}
-    .cont-ul li{height: 34px;line-height: 34px;font-size:24px; border-bottom: 2px solid #713800;}
-    .cont-tab{font-size: 18px;}
-    .cont-tab tr td{border: 1px solid #000;height: 30px;}
-    .cont-tab tr td:nth-child(1){width: 39px;}
-    .cont-tab tr td:nth-child(3){width: 45px;}
-
-    .cont-tab2{font-size: 12px;text-align: left;}
-    .cont-tab2 td{border:1px solid #000}
-    .cont-tab2 tr:nth-child(odd) td:nth-child(1){width: 33px;font-size: 16px;text-align: center;}
-
-    .cont-tab3{background: #f5f5f5;}
-    .cont-tab3 td{width: 33.3%;border: 2px solid #fff;font-size: 16px;}
-    .cont-tab3 td a{color: #000;}
-
-    .wrapper3-title{color: #fff;border-bottom: 1px solid #000;}
-    .wrapper3-cont{width: 80%;display: block;margin: 0 auto;border-bottom: 1px solid #000;color: #fff;line-height:20px;padding: 10px 0;font-size: 14px;}
-    //json  --end
+    //这里是内容区--end
 
   }
-  //这里是内容区--end
+
 
 }
+
+@media (max-width: 768px) {
+  @import 'mobile.less';
+
+  //头到6*16表格下面到结束
+  //json
+  .text-t {
+    background: linear-gradient(transparent, #794868);
+    font-size: 26px;
+    color: yellow;
+    text-shadow: 0px 0px 10px red;
+  }
+
+  //头到6*16表格下面到结束--end
+
+  //这里写的是less的配置项  --end
+  html {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  #app {
+    width: 100%;
+    max-width: @pageWidth;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    //这里是页头固定的样式
+    header {
+      width: 100%;
+      max-width: @pageWidth;
+      position: fixed;
+      z-index: 999;
+      background: #fff;
+      top: 0;
+      img {
+        width: 100%;
+      }
+      .coder {
+        width: 100%;
+        position: relative;
+        height: @coderHeight;
+        overflow: hidden;
+        iframe {
+          width: 100%;
+        }
+        .whiteBoard {
+          position: absolute;
+          top: 0px;
+          left: @whiteBoardLeft;
+          z-index: 50;
+          background: #fff;
+          width: 100px;
+          height: 50px;
+        }
+      }
+    }
+    //这里是页头固定的样式 --end
+
+    //这里是内容区
+    .content {
+      //Alan
+      margin-top: @headerHeight;
+      .advertisementImg {
+        img {
+          width: 100%;
+        }
+      }
+      > .box {
+        overflow: hidden;
+        border-radius: 5px;
+        padding: 0 5px;
+        background: #713800;
+        margin-top: 5px;
+      }
+      //新闻的样式
+      .advertisement {
+        height: @advertisement;
+        line-height: 100%;
+        color: #fff;
+        > div {
+          display: inline-block;
+          float: left;
+          height: @advertisement;
+        }
+        .advertisementLabel {
+          width: @advertisementLabelWidth;
+          line-height: @advertisement;
+          height: @advertisement;
+          text-align: right;
+        }
+        .advertisementContent {
+          width: calc(100% - @advertisementLabelWidth);
+          line-height: @advertisement;
+          height: @advertisement;
+        }
+      }
+      //介绍
+      .title_text {
+        font-size: @title_text_font;
+        font-weight: bold;
+        text-align: center;
+      }
+      //第一个表格  --11497铁算盘掐指一算四肖中特码
+      .table {
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 5px;
+        //表格中的字体样式都写在这儿了
+        .yellow {
+          background: #FFFF00;
+        }
+        .gray {
+          background: #C0C0C0;
+        }
+        .grayFont {
+          color: #C0C0C0;
+
+        }
+        .blueFont {
+          color: #00f;
+        }
+        .greenFont {
+          color: #008000;
+        }
+        .redFont {
+          color: #f00;
+        }
+        .tableTop {
+          color: yellow;
+          font-size: @tableTop_font;
+          background: linear-gradient(transparent, #794868);
+          text-shadow: 0px 0px 10px red;
+        }
+        .brownFont {
+          color: #808000;
+        }
+        .tableContent {
+          background: #fff;
+          font-size: @tablecontent_font;
+          border-radius: 6px;
+          overflow: hidden;
+          > div {
+            border: 1px solid #000;
+          }
+          .jumpFont {
+            color: #000;
+            font-size: 20px;
+            font-weight: normal;
+            :hover {
+              //border-bottom: 0.5px solid #000;
+              //padding-bottom: -4px  ;
+            }
+          }
+          .tableForever {
+            background: #fcf;
+            font-size: @tableForever_font;
+            border-bottom: none;
+            .forever {
+              overflow: hidden;
+              border-bottom: 1px solid #000;
+
+              > div {
+                display: inline-block;
+                float: left;
+              }
+              .left, .right {
+                width: @tableForeverLeftRightWidth;
+              }
+              .center {
+                background: #ff9;
+                width: calc(100% - @tableForeverLeftRightWidth * 2);
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+              }
+            }
+
+          }
+          .tableForever:last-child {
+            border-bottom: 1px solid #000;
+          }
+          .content_top {
+            background: #fc6;
+            overflow: hidden;
+            > div {
+              display: inline-block;
+              float: left;
+              border-right: 1px solid #000;
+
+            }
+            :not(:last-child) {
+              width: @table6_16width;
+            }
+            :last-child {
+              width: calc(100% - @table6_16width * 5);
+              border-right: none;
+            }
+          }
+          .content_content {
+            border-bottom: 1px solid #000;
+            overflow: hidden;
+            border-top: none;
+            > div {
+              display: inline-block;
+              float: left;
+              border-right: 1px solid #000;
+            }
+            :not(:last-child) {
+              width: @table6_16width;
+            }
+            :last-child {
+              width: calc(100% - @table6_16width * 5);
+              border-right: none;
+            }
+          }
+        }
+        .tableContentTable {
+          border-radius: 0px;
+          border: 1px solid #000;
+          border-bottom: none;
+          .tableContent_label {
+            background: #FF9933;
+            border-bottom: none;
+          }
+          .tableFoot {
+            border-bottom: none;
+            border-top: none;
+          }
+          .tableContent_table {
+            background: #fff;
+            font-size: 25px;
+            border: 1px solid #000;
+            overflow: hidden;
+            text-align: left;
+            width: 100%;
+            > div {
+              float: left;
+              display: inline-block;
+              border: 1px solid #000;
+            }
+            > div:nth-child(odd) {
+              width: @tablecontent_table1Width;
+              border-left: none;
+            }
+            > div:nth-child(even) {
+              width: calc(100% - @tablecontent_table1Width);
+              border-right: none;
+            }
+          }
+          //.tableContent_table
+        }
+        .tableContentTable:last-child {
+          border-top: none;
+          border-bottom: 2px solid #000;
+        }
+      }
+
+      //Alan   -end
+
+      //json
+      .t-rb {
+        color: #000080;
+      }
+      .t-yellow {
+        background: yellow;
+      }
+      .t-red {
+        color: red;
+      }
+      .t-blue {
+        color: blue;
+      }
+      section {
+        background: #713800;
+        margin-top: 5px;
+        padding: 4px;
+        border-radius: 5px;
+      }
+      .text-title {
+        &:extend(.text-t);
+      }
+      .back-white {
+        background: #fff;
+      }
+      .cont-ul li {
+        height: 34px;
+        line-height: 34px;
+        font-size: 24px;
+        border-bottom: 2px solid #713800;
+      }
+      .cont-tab {
+        font-size: 18px;
+      }
+      .cont-tab tr td {
+        border: 1px solid #000;
+        height: 30px;
+      }
+      .cont-tab tr td:nth-child(1) {
+        width: 39px;
+      }
+      .cont-tab tr td:nth-child(3) {
+        width: 45px;
+      }
+
+      .cont-tab2 {
+        font-size: 12px;
+        text-align: left;
+      }
+      .cont-tab2 td {
+        border: 1px solid #000
+      }
+      .cont-tab2 tr:nth-child(odd) td:nth-child(1) {
+        width: 33px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .cont-tab3 {
+        background: #f5f5f5;
+      }
+      .cont-tab3 td {
+        width: 33.3%;
+        border: 2px solid #fff;
+        font-size: 16px;
+      }
+      .cont-tab3 td a {
+        color: #000;
+      }
+
+      .wrapper3-title {
+        color: #fff;
+        border-bottom: 1px solid #000;
+      }
+      .wrapper3-cont {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid #000;
+        color: #fff;
+        line-height: 20px;
+        padding: 10px 0;
+        font-size: 14px;
+      }
+      //json  --end
+
+    }
+    //这里是内容区--end
+
+  }
+
+}
+//头到6*16表格--end
 
 //这个媒体查询--非手机情况下
 @media (min-width: 700px) {
@@ -333,3 +714,4 @@ html {
     display: none;
   }
 }
+

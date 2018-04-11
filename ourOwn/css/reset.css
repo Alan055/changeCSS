@@ -7,10 +7,12 @@ html, body {
   color: #000;
   text-align: center;
 }
-html{
+
+html {
   background: #F4F4F4;
   background-attachment: fixed;
 }
+
 /*div, span, iframe, map, font, input, img, a img, samp, hr, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, code, dl, dt, dd, ol, ul, li, form, label, table, tr, td, th {
 
     font-weight: normal;
@@ -60,6 +62,7 @@ a:focus {
 a.hidefocus {
   outline: none
 }
+
 input[type=text], input[type=button], input[type=submit] {
   -webkit-appearance: none;
   outline: none;
@@ -70,16 +73,21 @@ button {
   outline: none;
   cursor: pointer;
 }
-input{outline:none}
+
+input {
+  outline: none
+}
 
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
-table{
+
+table {
   table-layout: fixed;
   width: 100%;
 }
