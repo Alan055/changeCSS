@@ -230,6 +230,10 @@ html {
   border-top: none;
   border-bottom: 2px solid #000;
 }
+#app .content .video-js {
+  width: 700px;
+  height: 264px;
+}
 #app .content .t-rb {
   color: #000080;
 }
@@ -289,6 +293,7 @@ html {
   width: 33.3%;
   border: 2px solid #fff;
   font-size: 16px;
+  text-align: center;
 }
 #app .content .cont-tab3 td a {
   color: #000;
