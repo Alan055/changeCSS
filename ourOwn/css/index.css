@@ -306,6 +306,54 @@
     padding: 10px 0;
     font-size: 14px;
   }
+  #app .content .sx {
+    background: #e5e5e5;
+  }
+  #app .content .sx table {
+    margin-top: 5px;
+  }
+  #app .content .sx th {
+    height: 30px;
+    border: solid 1px #ccc;
+    background: #f1f1f1;
+  }
+  #app .content .sx td {
+    padding: 5px 0;
+    text-align: center;
+    border: solid 1px #d8ccb4;
+    word-wrap: break-word;
+    background: #fff;
+  }
+  #app .content .sx td.a-left {
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #app .content .sx span {
+    height: 18px;
+    line-height: 18px;
+    margin: 0 2px;
+    padding: 0 3px;
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+    background: #f00;
+  }
+  #app .content .sx span.green {
+    background: #009933;
+  }
+  #app .content .sx span.blue {
+    background: #3366ff;
+  }
+  #app .content ul.sx1 li {
+    float: left;
+    width: 33.33%;
+    padding: 5px 0;
+  }
+  #app .content ul.sx1 li dl dt img {
+    width: 40px;
+    height: auto;
+  }
 }
 @media (max-width: 768px) {
   .text-t,
@@ -557,10 +605,11 @@
     border-radius: 5px;
   }
   #app .content .back-white {
+    font-size: 28px;
     background: #fff;
   }
   #app .content .cont-ul li {
-    height: 34px;
+    height: 52px;
     line-height: 34px;
     font-size: 24px;
     border-bottom: 2px solid #713800;
@@ -571,23 +620,25 @@
   #app .content .cont-tab tr td {
     border: 1px solid #000;
     height: 30px;
+    font-size: 25px;
   }
   #app .content .cont-tab tr td:nth-child(1) {
     width: 39px;
   }
   #app .content .cont-tab tr td:nth-child(3) {
-    width: 45px;
+    width: 52px;
   }
   #app .content .cont-tab2 {
     font-size: 12px;
     text-align: left;
   }
   #app .content .cont-tab2 td {
+    font-size: 22px;
     border: 1px solid #000;
   }
   #app .content .cont-tab2 tr:nth-child(odd) td:nth-child(1) {
-    width: 33px;
-    font-size: 16px;
+    width: 52px;
+    font-size: 22px;
     text-align: center;
   }
   #app .content .wrapper3-title {
@@ -603,6 +654,64 @@
     line-height: 20px;
     padding: 10px 0;
     font-size: 14px;
+  }
+  #app .content .cont-tab3 td a {
+    color: #000;
+  }
+  #app .content .sx {
+    background: #e5e5e5;
+  }
+  #app .content .sx table {
+    margin-top: 5px;
+  }
+  #app .content .sx th {
+    height: 30px;
+    border: solid 1px #ccc;
+    background: #f1f1f1;
+    font-size: 24px;
+  }
+  #app .content .sx td {
+    padding: 5px 0;
+    text-align: center;
+    border: solid 1px #d8ccb4;
+    word-wrap: break-word;
+    background: #fff;
+  }
+  #app .content .sx td.a-left {
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #app .content .sx span {
+    height: 24px;
+    line-height: 23px;
+    margin: 2px 2px;
+    padding: 0 3px;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    background: #f00;
+  }
+  #app .content .sx span.green {
+    background: #009933;
+  }
+  #app .content .sx span.blue {
+    background: #3366ff;
+  }
+  #app .content .sx1 li dl dt {
+    font-size: 22px;
+  }
+  #app .content .ttt tr td:nth-child(1) {
+    font-size: 24px;
+  }
+  #app .content ul.sx1 li {
+    float: left;
+    width: 33.33%;
+    padding: 5px 0;
+  }
+  #app .content ul.sx1 li dl dt img {
+    width: 40px;
+    height: auto;
   }
 }
 @media (min-width: 700px) {
