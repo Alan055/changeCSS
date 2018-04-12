@@ -2,7 +2,8 @@
 <html lang="zh">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="applicable-device" content="mobile">
   <meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,7 +13,7 @@
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <title>&#38081;&#31639;&#30424;&#20013;&#29305;&#32593;&#49;&#49;&#52;&#57;&#55;&#124;&#29579;&#20013;&#29579;&#38081;&#31639;&#30424;&#24320;&#22870;&#32467;&#26524;&#124;&#38081;&#31639;&#30424;&#19968;&#21477;&#35299;&#29305;&#39532;&#124;&#29579;&#20013;&#29579;&#38081;&#31639;&#30424;&#22235;&#32918;&#20013;&#29305;&#124;&#20845;&#24320;&#24425;&#24320;&#22870;&#29616;&#22330;&#30452;&#25773;&#24320;&#22870;&#32467;&#26524;</title>
-  </head>
+</head>
 <body>
 
 <div id="app">
@@ -32,8 +33,9 @@
     </div>
     <div class="box advertisement">
       <div class="advertisementLabel" v-text="advertisementLabel"></div>
-      <div class="advertisementContent" >
-        <marquee scrollamount="2" scrolldelay="50" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: bold;">
+      <div class="advertisementContent">
+        <marquee scrollamount="2" scrolldelay="50" direction="left" onmouseover="this.stop();"
+                 onmouseout="this.start();" style="font-weight: bold;">
           <span style="color:#00FFFF">{{advertisementContent1}}</span>{{advertisementContent2}}
         </marquee>
       </div>
@@ -71,7 +73,7 @@
     </div>
     <!--报码器和开奖时间---这个不做了-->
     <!--<div class="box">-->
-      <!---->
+    <!---->
     <!--</div>-->
     <!--「平特一尾」-->
     <div class="box table">
@@ -95,7 +97,7 @@
     <div class="box table">
       <div class="tableTop" v-text="table7.label"></div>
       <div class="tableContent">
-        <div v-for="(v,i) in table7.content" :key="i" >
+        <div v-for="(v,i) in table7.content" :key="i">
           <a class="jumpFont" href="" v-html="v"></a>
         </div>
       </div>
@@ -107,7 +109,7 @@
         <div v-for="(v,i) in table8.content" :key="i" class="tableForever">
           <div v-for="(m,n) in v.table" :key="n" class="forever">
             <div class="left" v-text="m[0]"></div>
-            <div class="center" ><span class="redFont" v-html="m[1]"></span></div>
+            <div class="center"><span class="redFont" v-html="m[1]"></span></div>
             <div class="right" v-text="v.right"></div>
           </div>
           <div class="foot" v-text="table8.foot"></div>
@@ -125,7 +127,7 @@
     <div class="box table">
       <div class="tableTop" v-text="table10.label"></div>
       <div class="tableContent">
-        <div v-for="(v,i) in table10.content" :key="i" >
+        <div v-for="(v,i) in table10.content" :key="i">
           <a class="jumpFont" href="" v-html="v"></a>
         </div>
       </div>
@@ -141,7 +143,7 @@
     <div class="box table">
       <div class="tableTop" v-text="table12.label"></div>
       <div class="tableContent">
-        <div class="content_top" >
+        <div class="content_top">
           <div v-for="(v,i) in table12.content.tableTop" :key="i" v-text="v"></div>
         </div>
         <div class="content_content" v-for="(v,i) in table12.content.tableContent" :key="i">
@@ -156,36 +158,148 @@
     <!--for json-->
     <!--精华版-->
     <section class="wrapper1">
-    <p class="text-title">11497铁算盘「必中特码诗」精华版</p>
+      <p class="text-title">11497铁算盘「必中特码诗」精华版</p>
       <ul class="cont-ul back-white">
-        <li>021期特诗:<e class="t-yellow">狗</e>有特,龙蛇必中,猴猪开</li>
-        <li>021期特诗:<e class="t-yellow">狗</e>有特,龙蛇必中,猴猪开</li>
-        <li>021期特诗:<e class="t-yellow">狗</e>有特,龙蛇必中,猴猪开</li>
-        <li>021期特诗:<e class="t-yellow">狗</e>有特,龙蛇必中,猴猪开</li>
-        <li>021期特诗:<e class="t-yellow">狗</e>有特,龙蛇必中,猴猪开</li>
-        <li>021期特诗:<e class="t-yellow">狗</e>有特,龙蛇必中,猴猪开</li>
-        <li>021期特诗:<e class="t-yellow">狗</e>有特,龙蛇必中,猴猪开</li>
+        <li>021期特诗:
+          <e class="t-yellow">狗</e>
+          有特,龙蛇必中,猴猪开
+        </li>
+        <li>021期特诗:
+          <e class="t-yellow">狗</e>
+          有特,龙蛇必中,猴猪开
+        </li>
+        <li>021期特诗:
+          <e class="t-yellow">狗</e>
+          有特,龙蛇必中,猴猪开
+        </li>
+        <li>021期特诗:
+          <e class="t-yellow">狗</e>
+          有特,龙蛇必中,猴猪开
+        </li>
+        <li>021期特诗:
+          <e class="t-yellow">狗</e>
+          有特,龙蛇必中,猴猪开
+        </li>
+        <li>021期特诗:
+          <e class="t-yellow">狗</e>
+          有特,龙蛇必中,猴猪开
+        </li>
+        <li>021期特诗:
+          <e class="t-yellow">狗</e>
+          有特,龙蛇必中,猴猪开
+        </li>
       </ul>
     </section>
-     <!--原创玄机五点来料-->
+    <!--原创玄机五点来料-->
     <section class="wrapper2">
       <p class="text-title">11497【原创玄机】【五点来料】</p>
       <table class="cont-tab back-white" cellpadding="0" cellspacing="0">
         <tbody>
-        <tr><td rowspan="2">035期</td><td>铁算盘玄机≤<e class="t-red">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>特码</td></tr>
-        <tr><td>铁算盘玄机≤<e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>??</td></tr>
-        <tr><td rowspan="2">035期</td><td>铁算盘玄机≤<e class="t-red">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>特码</td></tr>
-        <tr><td>铁算盘玄机≤<e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>??</td></tr>
-        <tr><td rowspan="2">035期</td><td>铁算盘玄机≤<e class="t-red">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>特码</td></tr>
-        <tr><td>铁算盘玄机≤<e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>??</td></tr>
-        <tr><td rowspan="2">035期</td><td>铁算盘玄机≤<e class="t-red">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>特码</td></tr>
-        <tr><td>铁算盘玄机≤<e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>??</td></tr>
-        <tr><td rowspan="2">035期</td><td>铁算盘玄机≤<e class="t-red">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>特码</td></tr>
-        <tr><td>铁算盘玄机≤<e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>??</td></tr>
-        <tr><td rowspan="2">035期</td><td>铁算盘玄机≤<e class="t-red">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>特码</td></tr>
-        <tr><td>铁算盘玄机≤<e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>??</td></tr>
-        <tr><td rowspan="2">035期</td><td>铁算盘玄机≤<e class="t-red">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>特码</td></tr>
-        <tr><td>铁算盘玄机≤<e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>≥</td><td>??</td></tr>
+        <tr>
+          <td rowspan="2">035期</td>
+          <td>铁算盘玄机≤
+            <e class="t-red">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>特码</td>
+        </tr>
+        <tr>
+          <td>铁算盘玄机≤
+            <e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td rowspan="2">035期</td>
+          <td>铁算盘玄机≤
+            <e class="t-red">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>特码</td>
+        </tr>
+        <tr>
+          <td>铁算盘玄机≤
+            <e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td rowspan="2">035期</td>
+          <td>铁算盘玄机≤
+            <e class="t-red">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>特码</td>
+        </tr>
+        <tr>
+          <td>铁算盘玄机≤
+            <e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td rowspan="2">035期</td>
+          <td>铁算盘玄机≤
+            <e class="t-red">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>特码</td>
+        </tr>
+        <tr>
+          <td>铁算盘玄机≤
+            <e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td rowspan="2">035期</td>
+          <td>铁算盘玄机≤
+            <e class="t-red">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>特码</td>
+        </tr>
+        <tr>
+          <td>铁算盘玄机≤
+            <e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td rowspan="2">035期</td>
+          <td>铁算盘玄机≤
+            <e class="t-red">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>特码</td>
+        </tr>
+        <tr>
+          <td>铁算盘玄机≤
+            <e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>??</td>
+        </tr>
+        <tr>
+          <td rowspan="2">035期</td>
+          <td>铁算盘玄机≤
+            <e class="t-red">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>特码</td>
+        </tr>
+        <tr>
+          <td>铁算盘玄机≤
+            <e class="t-blue">马虎不得牛鬼蛇。（二头好）</e>
+            ≥
+          </td>
+          <td>??</td>
+        </tr>
         </tbody>
       </table>
     </section>
@@ -197,71 +311,251 @@
     <section>
       <p class="text-title">铁算盘「超准10码●长跟必赚！」</p>
       <ul class="cont-ul back-white">
-        <li>023期:08 <e class="t-yellow">32</e> 15 27 39 14 26 31 18</li>
-        <li>023期:08 <e class="t-yellow">32</e> 15 27 39 14 26 31 18</li>
-        <li>023期:08 <e class="t-yellow">32</e> 15 27 39 14 26 31 18</li>
-        <li>023期:08 <e class="t-yellow">32</e> 15 27 39 14 26 31 18</li>
-        <li>023期:08 <e class="t-yellow">32</e> 15 27 39 14 26 31 18</li>
-        <li>023期:08 <e class="t-yellow">32</e> 15 27 39 14 26 31 18</li>
-        <li>023期:08 <e class="t-yellow">32</e> 15 27 39 14 26 31 18</li>
+        <li>023期:08
+          <e class="t-yellow">32</e>
+          15 27 39 14 26 31 18
+        </li>
+        <li>023期:08
+          <e class="t-yellow">32</e>
+          15 27 39 14 26 31 18
+        </li>
+        <li>023期:08
+          <e class="t-yellow">32</e>
+          15 27 39 14 26 31 18
+        </li>
+        <li>023期:08
+          <e class="t-yellow">32</e>
+          15 27 39 14 26 31 18
+        </li>
+        <li>023期:08
+          <e class="t-yellow">32</e>
+          15 27 39 14 26 31 18
+        </li>
+        <li>023期:08
+          <e class="t-yellow">32</e>
+          15 27 39 14 26 31 18
+        </li>
+        <li>023期:08
+          <e class="t-yellow">32</e>
+          15 27 39 14 26 31 18
+        </li>
       </ul>
     </section>
 
-      <section class="wrapper2">
-              <p class="text-title">11497【原创玄机】【五点来料】</p>
-              <table class="cont-tab2 back-white" cellpadding="0" cellspacing="0">
-              <tbody>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              <tr><td rowspan="2">034期</td><td>一字拆一肖：<e class="t-red">？</e> 拆：<e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e></td></tr>
-              <tr><td>一句解特码：<e class="t-red">开奖日更新。。</e>     解：<e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e></td></tr>
-              </tbody>
-          </table>
-      </section>
-      <!--综合资料-->
+    <section class="wrapper2">
+      <p class="text-title">11497【原创玄机】【五点来料】</p>
+      <table class="cont-tab2 back-white" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">034期</td>
+          <td>一字拆一肖：
+            <e class="t-red">？</e>
+            拆：
+            <e class="t-rb">解整体，左右偏旁，上下结构，笔画，读音，来解一字玄机更多记录</e>
+          </td>
+        </tr>
+        <tr>
+          <td>一句解特码：
+            <e class="t-red">开奖日更新。。</e>
+            解：
+            <e class="t-rb">本站永久免费，人气决定生存，介绍更多的朋友光临我们的网站</e>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <!--综合资料-->
+    <section>
+      <p class="text-title">2018年001-152期全年综合资料</p>
+      <table class="cont-tab3 back-white" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+          <td><a target="_blank" href="">【六开彩属性】</a></td>
+        </tr>
+        </tbody>
+      </table>
+      <!--属性知识-->
       <section>
-          <p class="text-title">2018年001-152期全年综合资料</p>
-          <table class="cont-tab3 back-white" cellpadding="0" cellspacing="0">
-              <tbody>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              <tr><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td><td><a target="_blank" href="">【六开彩属性】</a></td></tr>
-              </tbody>
-          </table>
-          <!--属性知识-->
-       <section>
-           <p class="text-title">2018年属性知识</p>
-          <iframe width="100%" height="1560" src="https://www.309809.com/sx.htm"></iframe>
-       </section>
+        <p class="text-title">2018年属性知识</p>
+        <iframe width="100%" height="1560" src="https://www.309809.com/sx.htm"></iframe>
       </section>
-      <!--友情链接-->
-      <section class="wrapper3">
-          <p class="wrapper3-title">友情链接:</p>
-          <p class="wrapper3-cont">说明本论坛所提供的内容、资料、图片和资讯，只应用在合法的资料探讨，暂不适用于其它，外围和使用。特此声明 ！</p>
-          <p class="wrapper3-cont">围和使用。特此声明 ！ 论坛免责声明：以上所有广告内容均为赞助商提供，本站不对其经营行为负责。浏览或使用者须自行承担有关责任，本网站恕不 负责。</p>
-          <p class="wrapper3-cont">【铁算盘】域名：www.11497.com 在线，收集各类香港彩资料，免费内幕资料，走势分析，尽在铁算盘中特网 <e class="t-yellow t-red">GG联系：2259255119</e></p>
-      </section>
+    </section>
+    <!--友情链接-->
+    <section class="wrapper3">
+      <p class="wrapper3-title">友情链接:</p>
+      <p class="wrapper3-cont">说明本论坛所提供的内容、资料、图片和资讯，只应用在合法的资料探讨，暂不适用于其它，外围和使用。特此声明 ！</p>
+      <p class="wrapper3-cont">围和使用。特此声明 ！ 论坛免责声明：以上所有广告内容均为赞助商提供，本站不对其经营行为负责。浏览或使用者须自行承担有关责任，本网站恕不 负责。</p>
+      <p class="wrapper3-cont">【铁算盘】域名：www.11497.com 在线，收集各类香港彩资料，免费内幕资料，走势分析，尽在铁算盘中特网
+        <e class="t-yellow t-red">GG联系：2259255119</e>
+      </p>
+    </section>
   </div>
 </div>
 

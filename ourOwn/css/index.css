@@ -590,17 +590,6 @@
     font-size: 16px;
     text-align: center;
   }
-  #app .content .cont-tab3 {
-    background: #f5f5f5;
-  }
-  #app .content .cont-tab3 td {
-    width: 33.3%;
-    border: 2px solid #fff;
-    font-size: 16px;
-  }
-  #app .content .cont-tab3 td a {
-    color: #000;
-  }
   #app .content .wrapper3-title {
     color: #fff;
     border-bottom: 1px solid #000;
